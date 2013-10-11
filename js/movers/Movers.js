@@ -665,7 +665,9 @@ AudioDXMover = Mover.clone().newSlots({
 				//this.scale().y = .0001 + 1.5*Math.floor(dbins[n]*f)/f
 				
 				var f2 = f //1 + n % 2 + (n % 4 == 0 ? 1 : 0)
-				this.scale().y = .0001 + 1.5*Math.floor(dbins[n]*f2)/f2
+				var v = Math.sqrt(dbins[n])
+				v = Math.sqrt(v)
+				this.scale().y = .0001 + 1.5*Math.floor(v*f2)/f2
 
 				/*				
 				if (Math.abs(dbins[n]) > .5)

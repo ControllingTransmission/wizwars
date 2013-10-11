@@ -89,7 +89,7 @@ Spectrum = {
 		
 	    this._analyserNode.fftSize = 2048;
 		//this._analyserNode.smoothingTimeConstant = .3
-		this._analyserNode.smoothingTimeConstant = .25
+		this._analyserNode.smoothingTimeConstant = .1 //.25
 	    this._inputPoint.connect(this._analyserNode);
 
 	    zeroGain = this._audioContext.createGain();
